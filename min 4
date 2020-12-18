@@ -1,0 +1,18 @@
+import random
+
+N = random.randrange(1,15)
+print("N = ",N)
+i = 1
+x = random.randrange(1,15)
+min_x = x
+min_idx = i
+print(i, " : ", x)
+while  i < N:
+    i += 1
+    x = random.randrange(1,15)
+    print(i, " : ", x)
+    if x < min_x:
+        min_x = x
+        min_idx = i
+print("Minimum: ", min_x)
+print("Minimum's index: ", min_idx)
