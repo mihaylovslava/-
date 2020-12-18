@@ -1,0 +1,19 @@
+import random
+
+def Calc(A,B,Op):
+    if Op == 1:
+        return A - B
+    if Op == 2:
+        return A * B
+    if Op == 3:
+        return A / B
+    return A + B
+
+
+A,B = [random.randrange(1,11) for i in range(0,2)]
+N1,N2,N3 = [random.randrange(1,5) for i in range(0,3)]
+print("A =",A)
+print("B =",B)
+print("Calc({0},{1},{2}) = {3}".format(A,B,N1,Calc(A,B,N1)))
+print("Calc({0},{1},{2}) = {3}".format(A,B,N2,Calc(A,B,N2)))
+print("Calc({0},{1},{2}) = {3}".format(A,B,N3,Calc(A,B,N3)))

@@ -1,0 +1,19 @@
+import random
+import numpy
+
+N = random.randrange(1,10)
+print("N = ",N)
+
+L1 = [random.randint(1, 7) for i in range(N)]
+print("Initial:")
+print(L1)
+
+min_ = min(L1)
+max_ = max(L1)
+print("Minimum:",min_)
+print("Maximum:",max_)
+
+L2 = [i for i in L1 if i != max_ and i != min_]
+print("Without Extremums:")
+print(L2)
+print("Average:",numpy.mean(L2))
